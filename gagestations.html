@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<title>Gage Stations</title>
+	
+	<!--link to fealfet stylesheet-->
+	<link rel="stylesheet" href="file:///Users/Pip/Documents/Website/cartography.digital/gagestations.css"/>
+	
+	<!--Link to search tool stylesheet-->
+	<link rel="stylesheet" href="file:///Users/Pip/Documents/Website/cartography.digital/leaflet-search-master/src/leaflet-search.css"/>
+	
+	<!--link to Google Fonts
+	//<link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
+	-->
+	
+	<!-- LEAFLET RESPONSIVE POPUP -->
+	<script src="https://unpkg.com/leaflet-responsive-popup@0.2.0/leaflet.responsive.popup.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-responsive-popup@0.2.0/leaflet.responsive.popup.css" />
+	
+	<!--ONLINE LEAFLET LINK -->
+	<!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css"> -->
+	<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+	
+	
+	<!--LINK TO LOCAL LEAFLET SCRIPTS AND STYLESHEETS-->
+	<link rel="stylesheet" href="file:///Users/Pip/Documents/Website/cartography.digital/leaflet/leaflet.css"/>
+	<!-- <script src="file:///Users/Pip/Documents/Website/cartography.digital/leaflet/leaflet.js"></script> -->
+	<script src="file:///Users/Pip/Documents/Website/cartography.digital/leaflet.ajax.min.js">
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+	</script>
+	<script src="file:///Users/Pip/Documents/Website/cartography.digital/gages.geojson" type="text/javascript"></script>
+	<script src="file:///Users/Pip/Documents/Website/cartography.digital/leaflet.ajax.js" type="text/javascript">
+	</script>
+	
+	<!-- SEARCH TOOL REFERENCE -->
+	<script type="text/javascript" src="file:///Users/Pip/Documents/Website/cartography.digital/leaflet-search-master/src/leaflet-search.js">
+	</script>
+	
+	
+	<!-- SIDEBAR SCRIPT REFERENCE-->
+	<link href="file:///Users/Pip/Documents/Website/cartography.digital/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="file:///Users/Pip/Documents/Website/cartography.digital/sidebar2/css/leaflet-sidebar.css" rel="stylesheet">
+    <script src="file:///Users/Pip/Documents/Website/cartography.digital/sidebar2/js/leaflet-sidebar.min.js" type="text/javascript"></script>
+	<script src="file:///Users/Pip/Documents/Website/cartography.digital/sidebar2/scss/leaflet-sidebar.scss" type="text/javascript"></script>
+	
+	</head>
+	
+	<body>
+		
+		<div id="sidebar" class="sidebar sidebar-left collapsed">
+			<!-- NAV TABS -->
+        <div class="sidebar-tabs">
+            <ul role="tablist">
+                <li><a href="#search" role="tab"><i class="fa fa-info-circle"></i></a></li>
+				<li><a href="#layers" role="tab"><i class="fa fa-clone"></i></a></li>
+                <li><a href="#past" role="tab"><i class="fa fa-history"></i></a></li>
+				
+               <!-- <li><a href="https://github.com/Turbo87/sidebar-v2" role="tab" target="_blank"><i class="fa fa-github"></i></a></li> -->
+            </ul>
+
+            <ul role="tablist">
+				<li><a href="#print" role="tab"><i class="fa fa-print"></i></a></li>
+                <li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="sidebar-content">
+            
+            <div class="sidebar-pane" id="search">
+                <h1 class="sidebar-header">
+                    Gage Details
+                    <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+				
+				<p>search function placeholder</p>
+				<form>
+					<input type="text" name="search" placeholder="Gage Number...">
+				</form>
+				
+				<img src="http://www.cartography.digital/images/gage2220.png" height="100" width="100" >
+				
+				<link rel="stylesheet" href="file:///Users/Pip/Documents/Website/cartography.digital/chart1.html" type="text/html">
+
+                
+            </div>
+
+            <div class="sidebar-pane" id="layers">
+                <h1 class="sidebar-header">Layers<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            </div>
+
+            <div class="sidebar-pane" id="past">
+                <h1 class="sidebar-header">Past Rain Events<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+				
+				<p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+				<!--
+				<script type="text/javascript">
+					var searchControl = new L.Control.Search({
+						layer: geojson,
+						propertyName: 'number',
+						circleLocation: false,
+						/*moveToLocation: function(latlng, title, map) {
+						map.fitBounds( latlng.layer.getBounds() );
+						var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+						map.setView(latlng, zoom); // access the zoom
+						}*/
+					});
+					searchControl.on('search:locationfound', function(e) {
+						e.layer.setStyle({fillColor: '#ff0000', color: '#ff0000'});
+						if(e.layer._mouseover)
+							e.layer.openMouseover();
+					}).on('search:collapsed', function(e) {
+						geojson.eachLayer(function(layer) {	//restore feature color
+							geojson.resetStyle(layer);
+						});	
+					});
+					details.addControl( searchControl );  //inizialize search control
+				</script> -->
+			</div>
+			
+			<div class="sidebar-pane" id="print">
+                <h1 class="sidebar-header">Print Options<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            </div>
+
+            <div class="sidebar-pane" id="settings">
+                <h1 class="sidebar-header">Settings<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            </div>
+        
+			
+			
+		<!--	
+			<div class="sidebar-pane" id="home">
+                <h1 class="sidebar-header">
+                    sidebar-v2
+                    <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+
+                <p>A responsive sidebar for mapping libraries like <a href="http://leafletjs.com/">Leaflet</a> or <a href="http://openlayers.org/">OpenLayers</a>.</p>
+
+                <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="sidebar-pane" id="profile">
+                <h1 class="sidebar-header">Profile<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            </div>
+
+            <div class="sidebar-pane" id="messages">
+                <h1 class="sidebar-header">Messages<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            </div>
+
+            <div class="sidebar-pane" id="settings">
+                <h1 class="sidebar-header">Settings<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            </div> -->
+        </div>
+	</div>
+	
+	
+	<div id="map" class="map"></div>
+	
+	<script type="text/javascript">
+		
+		//SIDEBAR ADDITION
+	
+	var sidebar = L.control.sidebar('sidebar').addTo(map);
+	
+		// MAP BOUNDARIES
+		
+	var southWest = L.latLng(29.64808, -95.57796),
+		northEast = L.latLng(29.84928, -95.14297);
+	var	bounds = L.latLngBounds(southWest, northEast);
+			
+			
+//CREATES MAP 'WINDOW' AND CONTROLS
+	
+	var map = L.map('map', {
+		bounceAtZoomLimits: true,
+		center: [29.75, -95.36],
+		doubleClickZoom: false,
+		dragging: true,
+		zoomControl: false,
+		zoom: 3,
+		minZoom: 12,
+		maxZoom: 2,
+		touchZoom: false,
+		scrollWheelZoom: true,
+		trackResize: true,
+		touchZoom: true,
+		maxBounds: (bounds),
+	});
+
+	
+	// TILE-LAYER SETUP
+	L.tileLayer('https://api.mapbox.com/styles/v1/pippopanonymous/cihpgpx3r0004npm4b9j6l4k4/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicGlwcG9wYW5vbnltb3VzIiwiYSI6InlUNTdQbUUifQ.Tmojw9vrFw00kUSI1B2Qpg', {
+	maxZoom: 18,
+	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+				'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+				'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+	id: 'mapbox.streets'
+	}).addTo(map);
+	
+	
+	//WEATHER OVERLAY
+	L.tileLayer.wms("http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi", {
+    	layers: 'nexrad-n0r-900913-m50m',
+        format: 'image/png',
+        transparent: true,
+		opacity: .10,
+        attribution: "Weather data © 2012 IEM Nexrad"
+    }).addTo(map);
+	
+
+	
+/*
+	//GAGE DETAIL WINDOW
+	var details = L.control();
+	
+	details.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'details');
+		this.update();
+		return this._div;
+	};
+	*/
+	
+	/*
+	//GAGE DETAIL WINDOW UPDATE
+	details.update = function (props) {
+		this._div.innerHTML = 
+			'<h4>GAGE DETAILS<hr></h4>' +  
+			(props ?
+			 '</b><br/><h3>Gage Number: </h3>' + props.number + 
+			 '</b><br/><h3>Location: </h3>' + props.location +
+			 '</b><br/><h3>Watershed: </h3>' + props.watershed +
+			 '</b><br/><h3>Gage Type: </h3>' + props.gageType +
+			 '</b><br/><h3>Sensor Type: </h3>' + props.sensorType +
+			 '</b><br/><h3>Install Date: </h3>' + props.installDate +
+			 '</b><br/><h5></h5>' + props.zoomImage: 
+			 '<h2>Hover over a Gage</h2>');
+	};
+	details.addTo(map); 
+	
+	
+	//CONTROL EXPERIMENT
+	var MyControl = L.Control.extend({
+    options: {
+        position: 'topright'
+    },
+
+    onAdd: function (map) {
+        // create the control container with a particular class name
+        var container = L.DomUtil.create('div', 'my-custom-control');
+
+        // ... initialize other DOM elements, add listeners, etc.
+
+        return container;
+    }
+});
+
+map.addControl(new MyControl());
+	*/
+	
+		
+	
+	
+	//GEOJSON
+	
+	function style(feature) {
+			return {
+				clickable: true,
+				color: "#ff0000",
+				fillColor: "#ff0000",
+				fillOpacity: 0.6,
+				opacity: 1,
+				radius: 5,
+				weight: 1.75,	
+			};
+		}
+	
+	function highlightFeature(e) {
+			var layer = e.target;
+
+			layer.setStyle({
+				color: "#ff0000",
+				fillColor: "#ff0000",
+				fillOpacity: 0.4,
+				radius: 10,
+				shadowBlur:10,
+				shadowColor: "rgba(0, 0, 0, 1)",
+				shadowOffsetX: 5,
+				shadowOffsetY: 5,
+				weight: 2,
+			});
+
+			map.update(layer.feature.properties);
+		}
+
+
+		function resetHighlight(e) {
+			geojson.resetStyle(e.target);
+			map.update();
+		}
+
+
+		function onEachFeature(feature, layer) {
+			layer.on({
+				mouseover: highlightFeature,
+				mouseout: resetHighlight,
+			});
+		}
+
+		var geojson = new L.GeoJSON.AJAX("gages.geojson",{
+			pointToLayer: function (features, latlng) {
+				return L.circleMarker(latlng, style);
+			},
+			style: style,
+			onEachFeature: onEachFeature,
+		}).addTo(map);
+		
+	
+	
+	//SEARCH CONTROL
+	
+	var searchControl = new L.Control.Search({
+		layer: geojson,
+		propertyName: 'number',
+		//propertyName: 'watershed',
+		circleLocation: true,
+		/*moveToLocation: function(latlng, title, map) {
+			map.fitBounds( latlng.layer.getBounds() );
+			var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+  			map.setView(latlng, zoom); // access the zoom
+		}*/
+	});
+
+	searchControl.on('search:locationfound', function(e) {
+		
+		e.layer.setStyle({fillColor: '#ff0000', color: '#ff0000'});
+		if(e.layer._mouseover)
+			e.layer.openMouseover();
+
+	}).on('search:collapsed', function(e) {
+
+		geojson.eachLayer(function(layer) {	//restore feature color
+			geojson.resetStyle(layer);
+		});	
+	});
+	
+	map.addControl( searchControl );  //inizialize search control
+
+	//POPUP
+		
+		//geojson.bindPopup("advanced javascript mini-charts").openPopup(); //alternate
+		
+		var popop = L.popup({
+			autoClose: false,
+			autoPan: false,
+			className: 'popop',
+			closeButton: false,
+			closeOnClick: true,
+			keepInView: true,
+		})
+		function onGageClick(e) {
+			popop
+				.setLatLng(e.latlng)
+				.setContent("advanced html/javascript mini-maps")
+				.openOn(map);
+		}
+		
+		geojson.on('click', onGageClick); //specific to each point
+		
+	
+	//POPUP HOVER
+		
+		geojson.on('mouseover', function(e) {
+			var popup = L.popup({
+				closeButton: false,
+			})
+			.setLatLng(e.latlng) 
+			.setContent('Popup')
+			.openOn(map);
+		});
+		
+		/*geojson.off('mouseout', function(e) {
+			var popup = L.popup({
+				closeButton: false,
+			})
+			.setLatLng(e.latlng) 
+			.setContent('Popup')
+			.openOn(map);
+		});*/
+		
+		/*geojson.on('mouseover', onGageHover); //specific to each point
+		
+		var popip = L.popup({
+			autoPan: false,
+			className: 'popip',
+			closeButton: false,
+			keepInView: false,
+		})
+		function onGageHover(e) {
+			popip
+				.setLatLng(e.latlng)
+				.setContent("minimal html/javascript mini-maps")
+				.openOn(map);
+		}
+		*/
+		
+		
+		
+
+	
+		</script>         
+	</body>
+</html> 

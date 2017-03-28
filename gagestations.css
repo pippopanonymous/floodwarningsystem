@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+	padding: 0;
+    
+}
+
+html, body {
+    height: 100%;
+}
+
+.map {
+    height: 100%;
+}
+
+
+.details {
+    background: white;
+    border-radius: 5px;
+	box-shadow: 0 0 15px rgba(0,0,0,2); 
+    font: 12px/16px sans-serif;
+	height: 80%;
+	opacity: 0.9;
+	width: 240px;
+}
+
+h2 {
+	color: grey;
+	display: inline;
+	font: 16px/18px sans-serif;
+}
+
+
+h3 {
+	color: #000000;
+	display: inline;
+	font: 12px/14px sans-serif;
+	text-align: justify;
+}
+
+h4 {
+	color: #000000;
+	display: inline;
+	font-size: 16px;
+	padding: 23%;
+	text-align: center;
+}
+
+ h5 {
+	 height: auto;
+	 width: auto;
+	
+}
+
+.legend {
+	color: #555;
+	line-height: 18px;
+	text-align: left;
+}
+
+.legend i {
+	float: left;
+	height: 18px;
+	margin-right: 8px;
+	opacity: 0.7;
+	width: 18px;
+}
+
+.my-custom-control {
+	height: 10px;
+	position: inherit;
+	width: 10px;	
+}
+
+p {
+	margin: 10px;
+}
+
+img {
+	margin: 10px;
+}
+
+.lorem {
+	color: #AAA;
+	font-style: italic;
+	margin: 10px;
+}
+
+form {
+	background-color: white;
+	background-image: url('searchicon.png');
+	background-position: 10px 10px; 
+	background-repeat: no-repeat;
+	font-size: 12px;
+	margin: 10px;
+	width: 1000px;
+}
+
+
+/*.popop {
+	background-color: aqua;
+	border-radius: 12px;
+	height: 100px;
+	width: 200px;
+}*/
+
+
+
+
+/*
+ {
+	color: white;
+	display: inline-block;
+	font-size: 6em;
+	letter-spacing: 10px;
+	line-height: inherit;
+	margin-bottom: 4%;
+	margin-left: 6%;
+	margin-right: 7%;
+	margin-top: 8%;
+	padding-top: 8%;
+	text-align: center;
+	text-shadow: 1.5px 1.5px grey;
+	width: 90%;
+	
+}
+
+ {
+	color: white;
+	font-size: 2em;
+	height: auto;
+	margin: 1%;
+	padding-bottom: 1%;
+	padding-left: 2%;
+	padding-top: 2%;
+	text-align: center;
+	text-shadow: 1.5px 1.5px grey;
+	letter-spacing: 9px;
+}
+
+ {
+	color: white;
+	display: inline-block;
+	height: auto;
+	letter-spacing: 9.5px;
+	margin-left: 2.0%;
+	margin-top: 1%;
+	padding-top: 10%;
+	text-align: center;
+	text-shadow: 1.5px 1.5px grey;
+	width: 100%;
+
+}
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.dropdown-content {
+	align-content: center;
+	border-color: white;
+	border-width: 1px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	display: none;
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	z-index: 0;
+}
+
+.dropdown-content a {
+	align-content: center;
+	align-items: center;
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	
+}
+
+@media only screen and (max-width: 700px) and (orientation: portrait){
+	.info {
+		
+		padding-bottom: 1%;
+		margin-bottom: 1%;
+		margin-top: auto;
+		width: 90%;
+	}
+	
+	h1 {
+		font-size: 6em;
+		margin-top: 6%;
+	}
+	
+	h2 {
+		font-size: 2.1em;
+		line-height: .7em;
+		margin-left: 3.8%;
+	}
+	
+	h3 {
+		line-height: .2em;
+		width: 100%;
+	}
+	
+	.dropdown {
+		width: 100%;
+	}
+	
+	.dropdown-content {
+		border-width: 1px;
+		height:425px;
+		margin-left: -7% ;
+		width: 100%;
+	}
+}
+
+
+
+@media only screen and (max-width: 700px) and (orientation: landscape){
+	.info {
+		height: 5.9em;
+		margin-left: 29%;
+		width: 38%;
+	}
+    h1 {
+		font-size: 4em;
+		margin-top: 4%;
+		margin-left: 1%;
+		width: 96%;
+	}
+	 h2 {
+		 font-size: 1.3em;
+		 margin: 2%;
+	}
+	 h3 {
+		 letter-spacing: 4px;
+		 margin-bottom: .5%;
+		 margin-left:1.5%;
+		 margin-top: 0.5%;
+		 width: 100%;
+	}
+	
+	li {
+		height: 100%;
+	}
+	
+	ul{
+		height: 100%;
+	}
+	.dropdown {
+		align-content: left;
+		display: inline-block;
+		height: 39%;
+		position:relative;
+		text-align: center;
+		width: 100%;
+	}
+	.dropdown-content {
+		height:200px;
+		margin-left: -9%;
+		margin-top: -3%;
+		width: 100%;
+	} */

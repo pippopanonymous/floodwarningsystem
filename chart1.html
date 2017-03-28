@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		
+		<title>chart1</title>
+		
+		<script src="file:///Users/Pip/Documents/Website/Chart.bundle.js"></script>
+
+	
+	</head>
+	
+	<body>
+		
+		<canvas id="myChart" width="9" height="9"></canvas>
+		
+		<script>
+		var ctx = document.getElementById("myChart");
+			var myChart = new Chart(ctx, {
+				type: 'line',
+				data: {
+					labels: ["12:00 AM", "1:00 AM", "2:00 AM", "3:00 AM", "4:00 AM", "5:00 AM"],
+					datasets: [{
+						label: 'Stream Elevation',
+						fill: true,
+						lineTension: 0.2,
+						borderDash: [6, 6],
+						borderJoinStyle: 'miter',
+						data: [22, 12, 14, 3, 5, 2, 3],
+						backgroundColor: [
+							'rgba(0, 53, 255, 0.35)'
+						],
+						borderColor: [
+							'Blue'
+						],
+						borderWidth: 2,
+						pointBackgroundColor: 'rgba(255, 165, 0, 0.5)',
+						pointBorderColor: 'rgb(255, 165, 0)',
+						pointBorderWidth: 2,
+						pointHitRadius: 10,
+						pointHoverBorderWidth: 3,
+						pointHoverRadius: 12,
+						pointRadius: 6,
+					}],
+				},
+				options: {
+					title: {
+						display: true,
+						text: 'Stream Elevation'
+					},
+					scales: {
+						/*xAxes: [{
+							type: 'time',
+							time: {
+								unit: 'day'
+							}
+						}],*/
+						yAxes: [{
+							ticks: {
+							beginAtZero:false
+							}
+						}]
+					}
+				}
+			});
+			
+		</script>
+
+		
+	</body>
+	
+</html>

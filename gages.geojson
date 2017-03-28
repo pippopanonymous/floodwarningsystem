@@ -1,0 +1,90 @@
+{"type": "FeatureCollection", "features": [
+
+	{"type": "Feature", "id": "03", "properties": {"location": "Alabama", "number": "240"}, "geometry": {"type": "Point", "coordinates": [-95.1035, 29.5834]}},
+		
+	{"type": "Feature", "id": "04", "properties": {"location": "Alabama", "number": "310"}, "geometry": {"type": "Point", "coordinates": [-95.22836, 29.65652]}},
+		
+	{"type": "Feature", "id": "05", "properties": {"location": "Alabama", "number": "320"}, "geometry": {"type": "Point", "coordinates": [-95.24372, 29.67662]}},
+		
+	{"type": "Feature", "id": "06", "properties": {"location": "Alabama", "number": "340"}, "geometry": {"type": "Point", "coordinates": [-95.28925, 29.67396]}},
+
+	{"type": "Feature", "id": "10", "properties": {"location": "Alabama", "number": "400"}, "geometry": {"type": "Point", "coordinates": [-95.39305, 29.70591]}}, 
+
+	{"type": "Feature", "id": "11", "properties": {"location": "Alabama", "number": "410"}, "geometry": {"type": "Point", "coordinates": [ -95.30507, 29.72249]}}, 
+
+	{"type": "Feature", "id": "12", "properties": {"location": "Alabama", "number": "420"}, "geometry": {"type": "Point", "coordinates": [ -95.41209, 29.69741]}}, 
+
+	{"type": "Feature", "id": "13", "properties": {"location": "Alabama", "number": "430"}, "geometry": {"type": "Point", "coordinates": [ -95.44003, 29.69063]}}, 
+
+	{"type": "Feature", "id": "14", "properties": {"location": "Alabama", "number": "435"}, "geometry": {"type": "Point", "coordinates": [ -95.45984, 29.66433]}}, 
+
+	{"type": "Feature", "id": "15", "properties": {"location": "Alabama", "number": "440"}, "geometry": {"type": "Point", "coordinates": [ -95.46788, 29.67883]}}, 
+
+	{"type": "Feature", "id": "16", "properties": {"location": "Alabama", "number": "460"}, "geometry": {"type": "Point", "coordinates": [ -95.52817, 29.67278]}}, 
+
+	{"type": "Feature", "id": "17", "properties": {"location": "Alabama", "number": "465"}, "geometry": {"type": "Point", "coordinates": [-95.55696, 29.69525]}}, 
+
+	{"type": "Feature", "id": "18", "properties": {"location": "Alabama", "number": "480"}, "geometry": {"type": "Point", "coordinates": [-95.56228, 29.65643]}}, 
+
+	{"type": "Feature", "id": "19", "properties": {"location": "Alabama", "number": "510"}, "geometry": {"type": "Point", "coordinates": [-95.45300, 29.80500]}}, 
+
+	{"type": "Feature", "id": "20", "properties": {"location": "Alabama", "number": "520"}, "geometry": {"type": "Point", "coordinates": [-95.39724, 29.77517]}}, 
+
+	{"type": "Feature", "id": "21", "properties": {"location": "Alabama", "number": "530"}, "geometry": {"type": "Point", "coordinates": [-95.42665, 29.80164]}}, 
+
+	{"type": "Feature", "id": "22", "properties": {"location": "Alabama", "number": "535"}, "geometry": {"type": "Point", "coordinates": [-95.45867, 29.84105]}}, 
+ 
+	{"type": "Feature", "id": "25", "properties": {"location": "Alabama", "number": "560"}, "geometry": {"type": "Point", "coordinates": [-95.36873, 29.79233]}}, 
+
+	{"type": "Feature", "id": "26", "properties": {"location": "Alabama", "number": "570"}, "geometry": {"type": "Point", "coordinates": [ -95.39978, 29.84535]}}, 
+
+	{"type": "Feature", "id": "27", "properties": {"location": "Alabama", "number": "575"}, "geometry": {"type": "Point", "coordinates": [ -95.46072, 29.84636]}}, 
+
+	{"type": "Feature", "id": "28", "properties": {"location": "Alabama", "number": "580"}, "geometry": {"type": "Point", "coordinates": [ -95.46904, 29.82763]}}, 
+ 
+	{"type": "Feature", "id": "30", "properties": {"location": "Alabama", "number": "590"}, "geometry": {"type": "Point", "coordinates": [ -95.48773, 29.85106]}}, 
+
+	{"type": "Feature", "id": "32", "properties": {"location": "Alabama", "number": "820"}, "geometry": {"type": "Point", "coordinates": [ -95.22774, 29.77164]}}, 
+
+	{"type": "Feature", "id": "33", "properties": {"location": "Hunting Bayou @ Loop 610 East", "number": "830", "watershed": "Hunting Bayou", "gageType": "Rain", "sensorType": "Bubbler", "installDate": "10/03/1985", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [ -95.26802, 29.79307]}}, 
+
+	{"type": "Feature", "id": "34", "properties": {"location": "Hunting Bayou @ Lockwood Dr.", "number": "840", "watershed": "Hunting Bayou", "gageType": "Stream", "sensorType": "Radar", "installDate": "06/28/1995", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [ -95.31707, 29.80781]}}, 
+
+	{"type": "Feature", "id": "35", "properties": {"location": "Vince Bayou @ West Ellaine Ave.", "number": "920", "watershed": "Vince Bayou", "gageType": "Rain", "sensorType": "Bubbler", "installDate": "03/11/2014", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [ -95.2163, 29.69446]}}, 
+
+	{"type": "Feature", "id": "37", "properties": {"location": "Little Vince Bayou @ Jackson Ave.", "number": "940", "watershed": "Vince Bayou", "gagType": "Rain", "sensorType": "Bubbler", "installDate": "06/15/1988", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [ -95.20037, 29.70539]}}, 
+
+	{"type": "Feature", "id": "38", "properties": {"location": "Houston Transtar", "number": "1000", "watershed": "Buffalo Bayou", "gageType": "Rain", "sensorType": "unknown", "installDate": "unknown", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [ -95.440478, 29.782542]}}, 
+
+	{"type": "Feature", "id": "39", "properties": {"location": "NRG Park", "number": "1020", "watershed": "Brays Bayou", "gageType": "Rain", "sensorType": "unknown", "installDate": "unknown", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [ -95.412787, 29.687806]}}, 
+
+	{"type": "Feature", "id": "40", "properties": {"location": "Carpenters Bayou @ IH-10", "number": "1420", "watershed": "Carpenters Bayou", "gageType": "Stream", "sensorType": "Radar", "installDate": "08/20/1985", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [ -95.14741, 29.77212]}}, 
+
+	{"type": "Feature", "id": "41", "properties": {"location": "Carpenters Bayou @ Wallisville Rd.", "number": "1440", "watershed": "Carpenter Bayou", "gageType": "Stream", "sensorType": "Bubbler", "installDate": "01/01/1993", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [ -95.15909, 29.80982]}}, 
+
+	{"type": "Feature", "id": "42", "properties": {"location": "Carpenters Bayou @ US-90", "number": "1460", "watershed": "Carpenters Bayou", "gageType": "Stream", "sensorType": "Bubbler", "installDate": "01/19/1999", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [ -95.16101, 29.83915]}}, 
+
+	{"type": "Feature", "id": "44", "properties": {"location": "Greens Bayou @ Normandy St.", "number": "1610", "watershed": "Greens Bayou", "gageType": "Stream", "sensorType": "Radar", "installDate": "04/17/1986", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [ -95.20632, 29.77558]}}, 
+
+	{"type": "Feature", "id": "45", "properties": {"location": "Greens Bayou @ Ley Rd.", "number": "1620", "watershed": "Greens Bayou", "gageType": "Stream", "sensorType": "Bubbler", "installDate": "06/14/1983", "imageZoom": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [ -95.23342, 29.83744]}}, 
+
+	{"type": "Feature", "id": "46", "properties": {"location": "Garners Bayou @ Beltway 8", "number": "1630", "watershed": "Greens Bayou", "gageType": "Stream", "sensorType": "Bubbler", "installDate": "06/27/1984", "imageZoom": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [ -95.23342, 29.83744]}}, 
+
+	{"type": "Feature", "id": "49", "properties": {"location": "Halls Bayou @ Tidwell Rd.", "number": "1675", "watershed": "Greens Bayou", "gageType": "Stream", "sensorType": "Pressure Transducer", "intallDate": "01/03/2002", "zoomImage": "<img src= imageurl />" }, "geometry": {"type": "Point", "coordinates": [ -95.2842, 29.84899]}}, 
+		
+	{"type": "Feature", "id": "51", "properties": {"location": "Greens Bayou @ Tidwell Rd.", "number": "1685", "watershed": "Greens Bayou", "gageType": "Stream", "sensorType": "Pressure Transducer", "installDate": "04/01/2001", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [ -95.22849, 29.85002]}}, 
+
+	{"type": "Feature", "id": "54", "properties": {"location": "Buffalo Bayou @ Turning Basin", "number": "2210", "watershed": "Buffalo Bayou", "gageType": "Stream", "sensorType": "Bubbler", "installDate": "05/04/1988", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [-95.28989, 29.7521]}}, 
+
+	{"type": "Feature", "id": "55", "properties": {"location": "Bufallo Bayou at Milam St.", "number": "2220", "watershed": "Buffalo Bayou", "gageType": "Rain", "sensorType": "Radar", "installDate": "10/16/1986", "zoomImage": "<img src= http://www.cartography.digital/images/gage2220.png height=240 width=240 >"}, "geometry": {"type": "Point",  "coordinates": [-95.36132, 29.76491]}}, 
+
+	{"type": "Feature", "id": "56", "properties": {"location": "Ship Channel Turning Basin", "number": "2230", "watershed": "Buffalo Bayou", "gageType": "Stream", "sensorType": "Bubbler", "installDate": "05/04/1988", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [-95.146, 29.73416]}}, 
+
+	{"type": "Feature", "id": "57", "properties": {"location": "Buffalo Bayou @ Shepherd Dr.", "number": "2240", "watershed": "Buffalo Bayou", "gageType": "Stream", "sensorType": "Bubbler", "installDate": "01/14/2000", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [-95.40877, 29.76066]}}, 
+
+	{"type": "Feature", "id": "58", "properties": {"location": "Spring Branch @ Bingle Rd.", "number": "2250", "watershed": "Buffalo Bayou", "gageType": "Stream", "sensorType": "Bubbler", "installDate": "01/18/1996", "zoomImage": "<img src= image url />"}, "geometry": {"type": "Point", "coordinates": [-95.50043, 29.79629]}}, 
+
+	{"type": "Feature", "id": "59", "properties": {"location": "Buffalo Bayou @ San Felipe Dr.", "number": "2260", "watershed": "Buffalo Bayou", "gageType": "Stream", "sensorType": "Bubbler", "installDate": "10/14/1986", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [-95.50523, 29.75083]}}, 
+
+	{"type": "Feature", "id": "60", "properties": {"location": "Buffalo Bayou @ West Beltway 8", "number": "2270", "watershed": "Buffalo Bayou", "gageType": "Stream", "sensorType": "Radar", "installDate": "05/02/1988", "zoomImage": "<img src= imageurl />"}, "geometry": {"type": "Point", "coordinates": [-95.55776, 29.76226]}}
+	]}
